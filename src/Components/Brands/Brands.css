@@ -7,7 +7,12 @@
   width: 120px;
   height: 120px;
 }
-
+.plumbingheading {
+  font-size: 18px !important;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
 .vc_column_container > .vc_column-inner {
   box-sizing: border-box;
   padding-left: 15px;
@@ -95,7 +100,7 @@
   -o-transition: all 0.5s linear;
   -ms-transition: all 0.5s linear;
   transition: all 0.5s linear;
-  margin-right: 5rem !important;
+  padding-right: 1rem !important;
 }
 .dt-sc-icon-box.type5 .icon-content h4 {
   font-size: 18px;

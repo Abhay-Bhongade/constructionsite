@@ -1,15 +1,51 @@
+/* Footer Styles */
+
 .mb-30 {
   margin-bottom: 30px;
 }
 
-.copyright p,
-.copyright p a {
+/* Copyright Styles */
+
+.footer-widget .copyright p,
+.footer-widget .copyright p a {
   color: #313131;
 }
 
-.copyright p {
-  letter-spacing: 0.9px;
+/* Footer Widget Styles */
+
+.footer-title h3 {
+  color: #313131;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 0 16px;
+  text-align: left !important;
 }
+
+.footer-widget .footer-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-widget .footer-list ul li a {
+  color: #5d5d5d;
+  letter-spacing: 0.3px;
+}
+
+/* Specific List Style for ul.liststylenonefooterul */
+
+.footer-widget .footer-list ul.liststylenonefooterul {
+  list-style: none;
+}
+
+.footer-widget .footer-list ul.liststylenonefooterul li {
+  /* Add your desired styles for the specific ul.liststylenonefooterul li here */
+  list-style: none !important;
+}
+
+/* Additional Styles */
+
 p:last-child {
   margin-bottom: 0;
 }
@@ -22,44 +58,22 @@ p {
   line-height: 24px;
   margin-bottom: 15px;
 }
-.footer-widget .footer-title h3 {
-  color: #313131;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1;
-  margin: 0 0 16px;
-}
-ul {
-  list-style: none outside none;
-  margin: 0;
-  padding: 0;
-}
-.footer-widget .footer-list ul li {
-  margin: 0 0 11px;
-}
-.footer-widget .footer-list ul li a {
-  color: #5d5d5d;
-  letter-spacing: 0.3px;
-}
-a,
-button,
-img,
-input,
-span {
-  transition: all 0.3s ease 0s;
-}
+
 .ml-50 {
   margin-left: 50px;
 }
+
 .allcol4cntinfooter {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .footer-widget .subscribe-style p {
   color: #7a7a7a;
   margin: 0 0 20px;
 }
+
 .footer-widget .subscribe-style .subscribe-form input {
   background: transparent;
   border: none;
@@ -68,9 +82,11 @@ span {
   font-size: 13px;
   padding: 2px 10px 2px 0;
 }
+
 .clear {
   clear: both;
 }
+
 .footer-widget .subscribe-style .subscribe-form .clear button {
   background: none;
   border: none;
@@ -92,15 +108,71 @@ span {
 }
 
 .col-lg-2 {
-  text-align: center;
+  text-align: left;
 }
-.logocntinfooter {
-  margin-top: -40px;
+
+.footer-logo {
+  margin-top: -90px;
+  margin-left: -50px;
 }
+
 .allrightreserveparatag {
   margin-top: -20px;
 }
 
 .cntinfooter {
-  margin-top: 12rem !important;
+  margin-top: 5rem !important;
+}
+
+.footer-list ul li span .fa-solid {
+  color: #f59731;
+}
+
+.social-iconsinfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-iconinfooter {
+  font-size: 14px;
+}
+
+.social-iconsinfooter span {
+  background-color: #f58e1f;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  margin: 3px 0;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.footer-widgetli .footer-listli ul li::before {
+  content: "\2022";
+  color: #f59731;
+  font-weight: bold;
+  display: inline-block;
+  width: 0.7em; /* Increase the width to make the bullet larger */
+  font-size: 1.5em; /* Increase the font size to match the bullet size */
+  margin-left: -1.5em; /* Adjust the negative margin accordingly */
+}
+
+.infocnt {
+  margin-top: -25px;
+}
+.liststylenonefooterul li {
+  line-height: 2;
+}
+
+.exrtraptag {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #5d5d5d;
+  margin-left: 1rem;
 }

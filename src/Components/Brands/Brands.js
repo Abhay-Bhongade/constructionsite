@@ -8,10 +8,8 @@ const Brands = () => {
         <h2 className="headinginproduct">Our Services</h2>
       </div>
       <p className="vc_custom_heading parataginbrands my-5">
-        Could you be mine. And when the odds are against him and their dangers
-        work to do.
-        <br />
-        You bet your life Speed Racer.
+        We Offer huge range of Construction Material to cater
+        <br /> 360degree needs of our client!
       </p>
       <div className="row rowclassinbrands my-5">
         <div className="rs_col-sm-4 wpb_column vc_column_container vc_col-sm-2 vc_col-lg-2 vc_col-md-4">
@@ -104,7 +102,7 @@ const Brands = () => {
                   />
                 </div>
                 <div className="icon-content" />
-                <h4>Plumbing</h4>
+                <h4 className="plumbingheading">Plumbing</h4>
               </div>
             </div>
           </div>

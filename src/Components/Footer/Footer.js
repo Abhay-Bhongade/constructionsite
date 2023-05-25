@@ -28,101 +28,100 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-2 col-sm-4">
-              <div className="footer-widget mb-30 ml-30">
+            <div className="col-lg-2 col-sm-4 infocnt">
+              <div className="footer-widget mb-30 footer-widgetli">
                 <div className="footer-title">
-                  <h3>ABOUT US</h3>
+                  <h3>INFORMATION</h3>
                 </div>
-                <div className="footer-list">
+                <div className="footer-list footer-listli">
                   <ul>
                     <li>
-                      <a href="/about">About us</a>
+                      <a href="/about">Terms & Conditions</a>
                     </li>
                     <li>
-                      <a href="/home-furniture-four#/">Store location</a>
+                      <a href="/home-furniture-four#/">Privacy Policy</a>
                     </li>
                     <li>
-                      <a href="/contact">Contact</a>
+                      <a href="/contact">Order Tracking</a>
                     </li>
                     <li>
-                      <a href="/home-furniture-four#/">Orders tracking</a>
+                      <a href="/home-furniture-four#/">Contact Us</a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className="col-lg-2 col-sm-4">
-              <div className="footer-widget mb-30 ml-50">
+            <div className="col-lg-2 col-sm-4 mt-2">
+              <div className="footer-widget mb-30 footer-widgetli">
                 <div className="footer-title">
-                  <h3>USEFUL LINKS</h3>
+                  <h3>EXTRAS</h3>
                 </div>
-                <div className="footer-list">
+                <div className="footer-list  footer-listli">
                   <ul>
+                    <li>
+                      <a href="/home-furniture-four#/">About Us</a>
+                    </li>
+                    <li>
+                      <a href="/home-furniture-four#/">Delivery Information</a>
+                    </li>
                     <li>
                       <a href="/home-furniture-four#/">Returns</a>
                     </li>
                     <li>
-                      <a href="/home-furniture-four#/">Support Policy</a>
+                      <a href="/home-furniture-four#/">Become a Seller</a>
                     </li>
                     <li>
-                      <a href="/home-furniture-four#/">Size guide</a>
-                    </li>
-                    <li>
-                      <a href="/home-furniture-four#/">FAQs</a>
+                      <a href="/home-furniture-four#/">Membership Plans</a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className="col-lg-2 col-sm-6">
-              <div className="footer-widget mb-30 ml-75">
+            <div className="col-lg-2 col-sm-6 mt-4">
+              <div className="footer-widget mb-30">
                 <div className="footer-title">
-                  <h3>FOLLOW US</h3>
+                  <h3>HAVE A QUESTION?</h3>
                 </div>
                 <div className="footer-list">
-                  <ul>
+                  <ul className="liststylenonefooterul">
                     <li>
-                      <a
-                        href="//www.facebook.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Facebook
-                      </a>
+                      <span>
+                        <i class="fa-solid fa-clock"></i>
+                      </span>
+                      Monday - Friday:
+                      <p className="exrtraptag">09.00-18:30</p>
                     </li>
                     <li>
-                      <a
-                        href="//www.twitter.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Twitter
-                      </a>
+                      <span>
+                        <i class="fa-solid fa-location-pin"></i>
+                      </span>{" "}
+                      1600 7th Avenue,
+                      <p className="exrtraptag">Seattle, WA 98101</p>
                     </li>
                     <li>
-                      <a
-                        href="//www.instagram.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Instagram
-                      </a>
+                      <span>
+                        <i class="fa-solid fa-phone"></i>
+                      </span>{" "}
+                      +1.888.299.7171
                     </li>
                     <li>
-                      <a
-                        href="//www.youtube.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Youtube
-                      </a>
+                      <span>
+                        <i class="fa-solid fa-mobile"></i>
+                      </span>{" "}
+                      +1.888.299.7272
+                    </li>
+                    <li>
+                      <span>
+                        <i class="fa-solid fa-envelope"></i>
+                      </span>{" "}
+                      shop@rigid.com
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
             <div className="col-lg-2 col-sm-6">
-              <div className="footer-widget mb-30 ml-70">
+              <div className="footer-widget mb-30">
                 <div className="footer-title">
                   <h3>SUBSCRIBE</h3>
                 </div>
@@ -143,6 +142,34 @@ const Footer = () => {
                         </div>
                         <div className="clear">
                           <button className="button">SUBSCRIBE</button>
+                          <div className="social-iconsinfooter mt-3">
+                            <span
+                              className="social-iconinfooter"
+                              title="Add to cart"
+                            >
+                              {" "}
+                              <i class="fa-brands fa-facebook-f"></i>
+                            </span>
+                            <span
+                              title="Quick View"
+                              className="social-iconinfooter mx-3"
+                            >
+                              <i class="fa-brands fa-instagram"></i>
+                            </span>
+
+                            <span
+                              title="Add to wishlist"
+                              className="social-iconinfooter"
+                            >
+                              <i class="fa-brands fa-twitter"></i>
+                            </span>
+                            <span
+                              title="Add to wishlist"
+                              className="social-iconinfooter mx-3"
+                            >
+                              <i class="fa-brands fa-youtube"></i>
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>

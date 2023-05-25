@@ -1,5 +1,5 @@
 import React from "react";
-import bannerimageinbannerpage from "../../Images/bannerimageinbannerpage.png";
+import bannerinbannerp from "../../Images/bannerinbannerp.png";
 import "../BannerPage/BannerPage.css";
 import bannerimage from "../../Images/bannerimage.png";
 
@@ -22,7 +22,7 @@ const BannerPage = () => {
           </a>
         </div>
       </div>
-      <img src={bannerimage} alt="Image" className="responsive-imageinbp" />
+      <img src={bannerinbannerp} alt="Image" className="responsive-imageinbp" />
     </div>
   );
 };
