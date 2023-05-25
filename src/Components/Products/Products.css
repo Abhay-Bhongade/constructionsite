@@ -69,3 +69,8 @@
   position: relative;
   z-index: 1;
 }
+
+.defaultTabButton:hover {
+  color: #f58e1f !important;
+  cursor: pointer;
+}

@@ -55,6 +55,10 @@
   color: #555252 !important;
 }
 
+.custom-badge {
+  color: #000;
+}
+
 @media screen and (min-width: 769px) {
   .dropend:hover > .dropdown-menu {
     position: absolute;

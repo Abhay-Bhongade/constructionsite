@@ -238,8 +238,8 @@ const Navbar = () => {
             )}
             <div className="icon">
               <Badge
-                badgeContent={1}
-                color="default"
+                badgeContent={10}
+                color="primary"
                 classes={{ badge: "custom-badge" }}
               >
                 <FavoriteBorderIcon sx={{ fontSize: 25 }} />
@@ -250,8 +250,8 @@ const Navbar = () => {
             </div>
             <div className="icon">
               <Badge
-                badgeContent={1}
-                color="default"
+                badgeContent={10}
+                color="primary"
                 classes={{ badge: "custom-badge" }}
               >
                 <ShoppingBagIcon sx={{ fontSize: 25 }} />

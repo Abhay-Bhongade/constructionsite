@@ -18,3 +18,8 @@ html {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
+
+.fa-solid,
+.fa-brands:hover {
+  cursor: pointer;
+}
