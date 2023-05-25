@@ -137,7 +137,7 @@ const Footer = () => {
                             id="mc-form-email"
                             className="email"
                             type="email"
-                            placeholder="Enter your email address..."
+                            placeholder="Enter email address"
                           />
                         </div>
                         <div className="clear">
