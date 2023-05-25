@@ -86,33 +86,33 @@ const Footer = () => {
                   <ul className="liststylenonefooterul">
                     <li>
                       <span>
-                        <i class="fa-solid fa-clock"></i>
+                        <i class="fa-solid fa-clock pe-2"></i>
                       </span>
                       Monday - Friday:
                       <p className="exrtraptag">09.00-18:30</p>
                     </li>
                     <li>
                       <span>
-                        <i class="fa-solid fa-location-pin"></i>
+                        <i class="fa-solid fa-location-pin pe-2"></i>
                       </span>{" "}
                       1600 7th Avenue,
                       <p className="exrtraptag">Seattle, WA 98101</p>
                     </li>
                     <li>
                       <span>
-                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-solid fa-phone pe-2"></i>
                       </span>{" "}
                       +1.888.299.7171
                     </li>
                     <li>
                       <span>
-                        <i class="fa-solid fa-mobile"></i>
+                        <i class="fa-solid fa-mobile pe-2"></i>
                       </span>{" "}
                       +1.888.299.7272
                     </li>
                     <li>
                       <span>
-                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-solid fa-envelope pe-2"></i>
                       </span>{" "}
                       shop@rigid.com
                     </li>
