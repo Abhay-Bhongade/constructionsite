@@ -14,8 +14,7 @@ const Services = () => {
             </div>
             <div className="pt-2">
               <p className="paragraphinservices">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
-                eiusm.
+                Enjoy Free Shipping on all orders!.
               </p>
             </div>
           </div>
@@ -30,8 +29,7 @@ const Services = () => {
             </div>
             <div className="pt-2">
               <p className="paragraphinservices">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
-                eiusm.
+                Round-the-clock support for all your inquiries
               </p>
             </div>
           </div>
@@ -46,8 +44,7 @@ const Services = () => {
             </div>
             <div className="pt-2">
               <p className="paragraphinservices">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
-                eiusm.
+                Hassle-free Money-Back Guarantee
               </p>
             </div>
           </div>
