@@ -99,7 +99,7 @@ p {
   padding: 0 0 1px;
   text-transform: uppercase;
   width: auto;
-  margin-left: 4rem;
+  margin-left: 0rem;
 }
 
 .combinelogoimg {
@@ -118,6 +118,7 @@ p {
 
 .allrightreserveparatag {
   margin-top: -20px;
+  margin-left: -1rem !important;
 }
 
 .cntinfooter {
@@ -133,6 +134,7 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-left: -1rem !important;
 }
 
 .social-iconinfooter {
@@ -170,10 +172,18 @@ p {
 }
 
 .exrtraptag {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1;
-  color: #5d5d5d;
+  color: #5d5d5d !important;
   margin-left: 1.5rem;
   padding-bottom: 0.5rem;
+  font-weight: 400;
+  font-family: Montserrat, sans-serif;
+}
+
+.liststylenonefooterul li {
+  color: #5d5d5d !important;
+}
+.infoandextraheadingcommon {
+  margin-left: -2rem !important;
 }

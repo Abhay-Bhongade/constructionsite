@@ -7,11 +7,11 @@ const Brands = () => {
       <div className="section-title-8 text-center mb-30 bottom-border">
         <h2 className="headinginproduct">Our Services</h2>
       </div>
-      <p className="vc_custom_heading parataginbrands my-5">
+      <p className="vc_custom_heading parataginbrands my-4">
         We Offer huge range of Construction Material to cater
         <br /> 360degree needs of our client!
       </p>
-      <div className="row rowclassinbrands my-5">
+      <div className="row rowclassinbrands my-5 pb-5">
         <div className="rs_col-sm-4 wpb_column vc_column_container vc_col-sm-2 vc_col-lg-2 vc_col-md-4">
           <div className="vc_column-inner ">
             <div className="wpb_wrapper">
@@ -54,7 +54,7 @@ const Brands = () => {
                   />
                 </div>
                 <div className="icon-content">
-                  <h4>Masonry</h4>
+                  <h4 className="ms-3">Masonry</h4>
                 </div>
               </div>
             </div>
@@ -78,7 +78,7 @@ const Brands = () => {
                   />
                 </div>
                 <div className="icon-content">
-                  <h4>Painting</h4>
+                  <h4 className="ms-3">Painting</h4>
                 </div>
               </div>
             </div>
@@ -102,7 +102,7 @@ const Brands = () => {
                   />
                 </div>
                 <div className="icon-content" />
-                <h4 className="plumbingheading">Plumbing</h4>
+                <h4 className="plumbingheading ms-3">Plumbing</h4>
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@ const Brands = () => {
                   />
                 </div>
                 <div className="icon-content">
-                  <h4>Roofing</h4>
+                  <h4 className="ms-3">Roofing</h4>
                 </div>
               </div>
             </div>

@@ -31,7 +31,7 @@ const Footer = () => {
             <div className="col-lg-2 col-sm-4 infocnt">
               <div className="footer-widget mb-30 footer-widgetli">
                 <div className="footer-title">
-                  <h3>INFORMATION</h3>
+                  <h3 className="infoandextraheadingcommon">INFORMATION</h3>
                 </div>
                 <div className="footer-list footer-listli">
                   <ul>
@@ -54,7 +54,7 @@ const Footer = () => {
             <div className="col-lg-2 col-sm-4 mt-2">
               <div className="footer-widget mb-30 footer-widgetli">
                 <div className="footer-title">
-                  <h3>EXTRAS</h3>
+                  <h3 className="infoandextraheadingcommon">EXTRAS</h3>
                 </div>
                 <div className="footer-list  footer-listli">
                   <ul>
@@ -142,7 +142,7 @@ const Footer = () => {
                         </div>
                         <div className="clear">
                           <button className="button">SUBSCRIBE</button>
-                          <div className="social-iconsinfooter mt-3">
+                          <div className="social-iconsinfooter mt-4">
                             <span
                               className="social-iconinfooter"
                               title="Add to cart"
