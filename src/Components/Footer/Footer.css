@@ -1,0 +1,106 @@
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.copyright p,
+.copyright p a {
+  color: #313131;
+}
+
+.copyright p {
+  letter-spacing: 0.9px;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+p {
+  color: #333;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.footer-widget .footer-title h3 {
+  color: #313131;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 0 16px;
+}
+ul {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+}
+.footer-widget .footer-list ul li {
+  margin: 0 0 11px;
+}
+.footer-widget .footer-list ul li a {
+  color: #5d5d5d;
+  letter-spacing: 0.3px;
+}
+a,
+button,
+img,
+input,
+span {
+  transition: all 0.3s ease 0s;
+}
+.ml-50 {
+  margin-left: 50px;
+}
+.allcol4cntinfooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-widget .subscribe-style p {
+  color: #7a7a7a;
+  margin: 0 0 20px;
+}
+.footer-widget .subscribe-style .subscribe-form input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ebebeb;
+  color: #333;
+  font-size: 13px;
+  padding: 2px 10px 2px 0;
+}
+.clear {
+  clear: both;
+}
+.footer-widget .subscribe-style .subscribe-form .clear button {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #9b9b9c;
+  color: #313131;
+  font-size: 14px;
+  height: auto;
+  line-height: 1;
+  margin: 13px 0 0;
+  padding: 0 0 1px;
+  text-transform: uppercase;
+  width: auto;
+  margin-left: 4rem;
+}
+
+.combinelogoimg {
+  width: 200px;
+  height: 180px;
+}
+
+.col-lg-2 {
+  text-align: center;
+}
+.logocntinfooter {
+  margin-top: -40px;
+}
+.allrightreserveparatag {
+  margin-top: -20px;
+}
+
+.cntinfooter {
+  margin-top: 12rem !important;
+}

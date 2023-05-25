@@ -1,0 +1,107 @@
+.button {
+  width: 20vw;
+  height: 5vw;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+  text-decoration: none;
+  color: #000;
+  background-color: #ffffff;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.button:hover {
+  background-color: #bca487;
+  transition: all 0.6s ease 0s;
+}
+.btncntincard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0.8rem;
+  left: 3rem;
+}
+.commoncard {
+  position: relative;
+  height: 60vh;
+  border: none;
+  outline: none;
+}
+
+.cmnimgincard {
+  height: 60vh;
+}
+.cardcmpoverlap {
+  margin-top: -4rem !important;
+}
+
+.category-grid {
+  position: relative;
+  z-index: 9;
+}
+
+.category-grid__image a img {
+  width: 100%;
+  width: 376px;
+  height: 406px;
+}
+
+a,
+button {
+  color: #000;
+  cursor: pointer;
+  line-height: inherit;
+  text-decoration: none;
+}
+
+.category-grid__content {
+  bottom: 20px;
+  position: absolute;
+  width: 100%;
+  right: 20px;
+}
+
+.category-grid__content a:hover {
+  background-color: #00aeef;
+  color: #ffffff;
+}
+
+.category-grid__content a {
+  background-color: #fff;
+  color: #000;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 25px 15px;
+  text-align: center;
+  width: 80%;
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    position: relative;
+    height: 40vh;
+    border: none;
+    outline: none;
+  }
+
+  .cmnimgincard {
+    height: 40vh;
+  }
+  .btncntincard {
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    left: 1.8rem;
+  }
+  .button {
+    width: 80vw;
+    height: 12vw;
+  }
+}
