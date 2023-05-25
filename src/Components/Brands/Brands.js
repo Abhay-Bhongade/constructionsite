@@ -27,7 +27,7 @@ const Brands = () => {
                     alt=""
                     decoding="async"
                     loading="lazy"
-                    srcset="https://tanj.wpengine.com/wp-content/uploads/2018/01/cap.png 120w, https://tanj.wpengine.com/wp-content/uploads/2018/01/cap-100x100.png 100w"
+                    srcSet="https://tanj.wpengine.com/wp-content/uploads/2018/01/cap.png 120w, https://tanj.wpengine.com/wp-content/uploads/2018/01/cap-100x100.png 100w"
                     sizes="(max-width: 120px) 100vw, 120px"
                   />
                 </div>
@@ -51,7 +51,7 @@ const Brands = () => {
                     alt=""
                     decoding="async"
                     loading="lazy"
-                    srcset="https://tanj.wpengine.com/wp-content/uploads/2018/01/icon-img6.png 120w, https://tanj.wpengine.com/wp-content/uploads/2018/01/icon-img6-100x100.png 100w"
+                    srcSet="https://tanj.wpengine.com/wp-content/uploads/2018/01/icon-img6.png 120w, https://tanj.wpengine.com/wp-content/uploads/2018/01/icon-img6-100x100.png 100w"
                     sizes="(max-width: 120px) 100vw, 120px"
                   />
                 </div>
@@ -75,7 +75,7 @@ const Brands = () => {
                     alt=""
                     decoding="async"
                     loading="lazy"
-                    srcset="https://tanj.wpengine.com/wp-content/uploads/2018/01/brush2.png 120w, https://tanj.wpengine.com/wp-content/uploads/2018/01/brush2-100x100.png 100w"
+                    srcSet="https://tanj.wpengine.com/wp-content/uploads/2018/01/brush2.png 120w, https://tanj.wpengine.com/wp-content/uploads/2018/01/brush2-100x100.png 100w"
                     sizes="(max-width: 120px) 100vw, 120px"
                   />
                 </div>
@@ -99,7 +99,7 @@ const Brands = () => {
                     alt=""
                     decoding="async"
                     loading="lazy"
-                    srcset="https://tanj.wpengine.com/wp-content/uploads/2018/01/tap.png 120w, https://tanj.wpengine.com/wp-content/uploads/2018/01/tap-100x100.png 100w"
+                    srcSet="https://tanj.wpengine.com/wp-content/uploads/2018/01/tap.png 120w, https://tanj.wpengine.com/wp-content/uploads/2018/01/tap-100x100.png 100w"
                     sizes="(max-width: 120px) 100vw, 120px"
                   />
                 </div>
@@ -122,7 +122,7 @@ const Brands = () => {
                     alt=""
                     decoding="async"
                     loading="lazy"
-                    srcset="https://tanj.wpengine.com/wp-content/uploads/2018/01/door.png 120w, https://tanj.wpengine.com/wp-content/uploads/2018/01/door-100x100.png 100w"
+                    srcSet="https://tanj.wpengine.com/wp-content/uploads/2018/01/door.png 120w, https://tanj.wpengine.com/wp-content/uploads/2018/01/door-100x100.png 100w"
                     sizes="(max-width: 120px) 100vw, 120px"
                   />
                 </div>
@@ -146,7 +146,7 @@ const Brands = () => {
                     alt=""
                     decoding="async"
                     loading="lazy"
-                    srcset="https://tanj.wpengine.com/wp-content/uploads/2018/01/house.png 120w, https://tanj.wpengine.com/wp-content/uploads/2018/01/house-100x100.png 100w"
+                    srcSet="https://tanj.wpengine.com/wp-content/uploads/2018/01/house.png 120w, https://tanj.wpengine.com/wp-content/uploads/2018/01/house-100x100.png 100w"
                     sizes="(max-width: 120px) 100vw, 120px"
                   />
                 </div>

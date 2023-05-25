@@ -60,7 +60,7 @@ const Navbar = () => {
                 Home
               </a>
             </li>
-            <l i className="nav-item dropdown mx-5">
+            <li className="nav-item dropdown mx-5">
               <a
                 className="nav-link dropdown-toggle"
                 href="#"
@@ -213,7 +213,7 @@ const Navbar = () => {
                   </ul>
                 </li>
               </ul>
-            </l>
+            </li>
 
             <li className="nav-item">
               <a className="nav-link">Contact Us</a>
