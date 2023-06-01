@@ -33,7 +33,7 @@ const NewListing = () => {
                 className="oneimgcntinnewlisting bnimg1cnt"
                 style={{ position: "relative" }}
               >
-                <div className="iconcntinlisting">
+                {/* <div className="iconcntinlisting">
                   <span>
                     {" "}
                     <i className="fa fa-shopping-cart "></i>
@@ -42,7 +42,7 @@ const NewListing = () => {
                     {" "}
                     <i className="fa fa-heart"></i>
                   </span>
-                </div>
+                </div> */}
                 <img
                   className="card-img-top "
                   src={bnimg1}
@@ -53,7 +53,7 @@ const NewListing = () => {
                 className="twoimglsinbnsection"
                 style={{ position: "relative" }}
               >
-                <div className="iconcntinlisting2">
+                {/* <div className="iconcntinlisting2">
                   <span>
                     {" "}
                     <i className="fa fa-shopping-cart "></i>
@@ -72,7 +72,7 @@ const NewListing = () => {
                     {" "}
                     <i className="fa fa-heart"></i>
                   </span>
-                </div>
+                </div> */}
                 <img
                   className="card-img-top imgtwoinbgsec"
                   src={bnimg2}
