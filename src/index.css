@@ -8,6 +8,7 @@ body {
   box-sizing: border-box;
   /* border: 4px solid yellow; */
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden !important;
 }
 
 html {
