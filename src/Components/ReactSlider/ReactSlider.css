@@ -1,0 +1,31 @@
+.slider-container .slick-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.slick-prev,
+.slick-next {
+  color: #f58e1f !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #f58e1f !important;
+}
+.card-body {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top: 4px solid #f7f7f7;
+}
+.slidercnt {
+  background-color: #f7f7f7;
+}
+.card {
+  box-shadow: "0 1px 5px 2px rgba(0, 0, 0, 0.95)";
+  border: 1px solid gainsboro;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px !important;
+}

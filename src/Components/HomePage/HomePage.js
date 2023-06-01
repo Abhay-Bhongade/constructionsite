@@ -6,23 +6,36 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <div className="content">
-        <h3 className="heading pb-0">Our</h3>
-        <h3 className="heading pb-0">Construction Essentials</h3>
-        <h3 className="heading pb-0 heading2">Your house root</h3>
+        <h3 className="heading pb-0">Buy Sell and discover</h3>
+        <h3 className="heading pb-0">Construction Materials</h3>
+
         <div className="slider-btn-brown btn-hover mt-4">
           <h1 className="animated">
-            Construction
-            <span className="hub"> hub</span>
+            Sign up now and join millions of people on the social marketplace
+            for all Construction things.
           </h1>
         </div>
-
-        <div className="slider-btn-brown btn-hover mtclinbtn">
-          <a className="animatedsss black" href="/shop-grid-standard">
-            Shop Now
-          </a>
+        <div className="btncntinhomepage">
+          <button className="facebookbtn" type="button">
+            <i class="fa-brands fa-facebook"></i>
+            <span className="ms-2">Continue with Facebook</span>
+          </button>
+          <button className="googlebtn mt-3" type="button">
+            <i class="fa-brands fa-google"></i>
+            <span className="ms-2">Continue with Google</span>
+          </button>
+          <div className="signupwithemailcnt mt-4">
+            <a class="signupwithemail" href="/shop-grid-standard">
+              Sign up with Email
+            </a>
+          </div>
         </div>
       </div>
-      <img src={bannerImage} alt="Image" className="responsive-image" />
+      <img
+        src="/static/media/homepagebanner.7f4356f9e5961c3f10c1.png"
+        alt="Image"
+        class="responsive-image"
+      ></img>
     </div>
   );
 };

@@ -18,7 +18,7 @@ const BannerPage = () => {
 
         <div className="slider-btn-brown btn-hover mtclinbtn">
           <a className="animatedsss black" href="/shop-grid-standard">
-            Shop Now
+            Visit Now
           </a>
         </div>
       </div>

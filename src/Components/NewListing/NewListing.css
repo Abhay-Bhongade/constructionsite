@@ -1,0 +1,113 @@
+.profilcnt {
+  display: flex;
+  align-items: center;
+}
+
+.profilpic {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+.spanintextcnt {
+  font-size: 18px;
+}
+.headingintextcntinnewlisting {
+  font-size: 18px;
+}
+.textparainlisting {
+  color: #9b9691;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.listoneimg {
+  border-radius: 14px;
+}
+.imglistingnewlisting3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.firstimg {
+  height: 100%;
+  width: 100%;
+}
+.secondimg {
+  height: 100%;
+  width: 100%;
+}
+
+.twoimgcntinnewlisting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.fourimg {
+  height: 100%;
+  width: 95%;
+}
+.bgforlsinnl {
+  height: 100vh;
+}
+
+.oneimgcntinnewlisting {
+  width: 100%;
+  height: 100%;
+}
+.singleimgcntinbox2 {
+  width: 50%;
+  height: 103.5vh;
+}
+.multiimgcntinbox2 {
+  width: 50%;
+  height: 100%;
+}
+.imgtwoinbgsec {
+  width: 50%;
+  height: 40vh;
+}
+.imgthreeinbgsec {
+  width: 50%;
+  height: 40vh;
+}
+.iconcntinlisting {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.iconcntinlisting span .fa {
+  color: #000 !important;
+  font-size: 25px !important;
+}
+.iconcntinlisting2 span .fa {
+  color: #fff !important;
+  font-size: 25px !important;
+  margin-top: 1rem;
+}
+.iconcntinlisting3 span .fa {
+  margin-top: 1rem;
+  color: #fff !important;
+  font-size: 25px !important;
+}
+
+.iconcntinlisting2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.iconcntinlisting3 {
+  position: absolute;
+  top: 0;
+  right: 52%;
+}
+.bnimg1cnt {
+  height: 48vh;
+}
+.twoimglsinbnsection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40vh;
+}

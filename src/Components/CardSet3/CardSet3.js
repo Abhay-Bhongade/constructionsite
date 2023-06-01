@@ -3,8 +3,8 @@ import thirteen from "../../Images/Construction prodcuts (1)/13.png";
 import fourteen from "../../Images/Construction prodcuts (1)/14.png";
 import fifthteen from "../../Images/Construction prodcuts (1)/15.png";
 import sixteen from "../../Images/Construction prodcuts (1)/16.png";
-import seventeen from "../../Images/Construction prodcuts (1)/17.png";
-import eighteen from "../../Images/Construction prodcuts (1)/18.png";
+import seven from "../../Images/Construction prodcuts (1)/7.png";
+import eight from "../../Images/Construction prodcuts (1)/8.png";
 import "../CardSet1/CardSet1.css";
 
 const CardSet3 = () => {
@@ -15,10 +15,10 @@ const CardSet3 = () => {
           <div className="card">
             <img
               className="image-top"
-              src={eighteen}
+              src={eight}
               alt="Soft Chair"
-              onMouseOver={(e) => (e.currentTarget.src = eighteen)}
-              onMouseOut={(e) => (e.currentTarget.src = seventeen)}
+              onMouseOver={(e) => (e.currentTarget.src = eight)}
+              onMouseOut={(e) => (e.currentTarget.src = seven)}
             />
             <div className="card-body">
               <h3 className="card-title">Card title</h3>

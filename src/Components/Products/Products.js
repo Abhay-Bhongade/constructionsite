@@ -27,7 +27,7 @@ const Products = () => {
                   : "defaultTabButton"
               }
             >
-              New Arrivals
+              Equipment
             </span>
             <span
               onClick={() => handleTabClick(2)}
@@ -37,7 +37,7 @@ const Products = () => {
                   : "defaultTabButton mx-5"
               }
             >
-              Best Sellers{" "}
+              Electrical
             </span>
             <span
               onClick={() => handleTabClick(3)}
@@ -47,7 +47,7 @@ const Products = () => {
                   : "defaultTabButton"
               }
             >
-              Sale Items
+              Metals
             </span>
 
             {/* Display cards based on active tab */}

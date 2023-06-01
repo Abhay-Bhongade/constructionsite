@@ -8,18 +8,23 @@ import HomePage from "./Components/HomePage/HomePage";
 import BannerPage from "./Components/BannerPage/BannerPage";
 import Brands from "./Components/Brands/Brands";
 import Footer from "./Components/Footer/Footer";
-
+import Navbar from "./Components/Navbar/Navbar";
+import WasteManagment from "./Components/WasteManagment/WasteManagment";
+import BuyerSeller from "./Components/BuyerSeller/BuyerSeller";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ComboComponent from "./Components/ComboComponent";
+import ComboNew from "./Components/ComboNew";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 function App() {
   return (
     <div>
-      <Navigation />
-      <HomePage />
-      <Cards />
-      <Services />
-      <BannerPage />
-      <Products />
-      <Brands />
-      <Footer />
+      {/* <Navigation /> */}
+
+      <Routes>
+        <Route path="/" element={<ComboComponent />} />
+        <Route path="/combonew" element={<ComboNew />} />
+      </Routes>
     </div>
   );
 }

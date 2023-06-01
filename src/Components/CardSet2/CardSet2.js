@@ -1,6 +1,6 @@
 import React from "react";
-import seven from "../../Images/Construction prodcuts (1)/7.png";
-import eight from "../../Images/Construction prodcuts (1)/8.png";
+import seventeen from "../../Images/Construction prodcuts (1)/17.png";
+import eighteen from "../../Images/Construction prodcuts (1)/18.png";
 import nine from "../../Images/Construction prodcuts (1)/9.png";
 import ten from "../../Images/Construction prodcuts (1)/10.png";
 import eleven from "../../Images/Construction prodcuts (1)/11.png";
@@ -77,10 +77,10 @@ const CardSet2 = () => {
           <div className="card">
             <img
               className="image-top"
-              src={eight}
+              src={eighteen}
               alt="Soft Chair"
-              onMouseOver={(e) => (e.currentTarget.src = eight)}
-              onMouseOut={(e) => (e.currentTarget.src = seven)}
+              onMouseOver={(e) => (e.currentTarget.src = eighteen)}
+              onMouseOut={(e) => (e.currentTarget.src = seventeen)}
             />
             <div className="card-body">
               <h3 className="card-title">Card title</h3>
@@ -104,6 +104,7 @@ const CardSet2 = () => {
             </div>
           </div>
         </div>
+      
       </div>
     </div>
   );

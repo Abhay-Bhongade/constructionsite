@@ -1,0 +1,35 @@
+.dropdown-toggle-right {
+  margin-left: auto;
+}
+
+.dropdown-menu-end {
+  left: 100%;
+}
+
+.imgcntinNavigationPage {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.headingcntinnav3page {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.parainnav3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.homepgheading {
+  color: #00aeef;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}

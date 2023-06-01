@@ -20,12 +20,13 @@
   text-align: center;
   padding: 20px;
   color: #ffffff;
-  top: 180px;
+  top: 120px;
+  width: 30vw;
 }
 
 .heading {
   color: #313131;
-  font-size: 3.5rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.2px;
   text-align: left;
@@ -36,10 +37,11 @@
 
 .animated {
   color: #313131 !important;
-  font-size: 1.3rem;
+  font-size: 1.125rem;
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.25;
   margin: 0 0 50px;
+  text-align: left;
 }
 .hub {
   color: #00aeef;
@@ -69,3 +71,55 @@
   line-height: 1;
   padding: 18px 40px 16px;
 }
+
+.facebookbtn {
+  width: 20rem;
+  height: 3rem;
+  border-radius: 4px;
+  color: #fcfbfb;
+  border-color: #3d5a98;
+  background: #3d5a98;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  text-shadow: 0 -1px -1px #a22d1f;
+
+  transition: all 0.15s ease-in-out;
+}
+
+.googlebtn {
+  width: 20rem;
+  height: 3rem;
+  border-radius: 4px;
+  color: #6a6a6a;
+  border-color: #fff;
+  background: #fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  text-shadow: 0 -1px -1px #a22d1f;
+  transition: all 0.15s ease-in-out;
+}
+.btncntinhomepage {
+  margin-left: -6rem;
+}
+.signupwithemail {
+  text-decoration: underline;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+.headerloginsignupverticalbar {
+  color: #c1bfbc;
+  font-weight: 300;
+}
+
+.form-inline {
+  border: 2px solid blue;
+}
+.signinsignupanchor {
+  font-size: 1rem;
+  font-weight: 500;
+}
+

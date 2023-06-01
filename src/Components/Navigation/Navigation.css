@@ -58,7 +58,11 @@
 .custom-badge {
   color: #000;
 }
-
+.searchbtninNavigation {
+  background-color: #00aeef !important;
+  border: none !important;
+  outline: none;
+}
 @media screen and (min-width: 769px) {
   .dropend:hover > .dropdown-menu {
     position: absolute;
