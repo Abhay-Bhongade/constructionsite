@@ -263,7 +263,7 @@ const NewListing = () => {
               </div>
             </div>
           </div>
-          <div className="box5 mb-5">
+          <div className="box5">
             <div className="profilcnt">
               <div className="imgcntinnewlisting">
                 <img
