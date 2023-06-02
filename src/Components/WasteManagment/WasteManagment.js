@@ -22,7 +22,7 @@ const WasteManagment = () => {
         <div className="col-md-3 px-md-5 px-3 my-3 my-md-0">
           <div className="boxinservices">
             <div className="imgcntinservices">
-              <i class="fa-solid fa-box fa-sharp"></i>
+              <i className="fa-solid fa-box fa-sharp"></i>
             </div>
             <div className="section-title-9 text-center bottom-border">
               <h5 className="headinginservices">Unishippers</h5>
@@ -37,7 +37,7 @@ const WasteManagment = () => {
         <div className="col-md-3 px-md-5 px-3">
           <div className="boxinservices">
             <div className="imgcntinservices">
-            <i class="fa-sharp fa-solid fa-recycle"></i>
+              <i className="fa-sharp fa-solid fa-recycle"></i>
             </div>
             <div className="section-title-9 text-center bottom-border">
               <h5 className="headinginservices">Waste Managment</h5>
@@ -50,7 +50,7 @@ const WasteManagment = () => {
         <div className="col-md-3 px-md-5 px-3">
           <div className="boxinservices">
             <div className="imgcntinservices">
-              <i class="fa-solid fa-seedling fa-sharp"></i>
+              <i className="fa-solid fa-seedling fa-sharp"></i>
             </div>
             <div className="section-title-9 text-center bottom-border">
               <h5 className="headinginservices">HWH Environmental</h5>

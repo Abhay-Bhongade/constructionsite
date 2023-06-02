@@ -40,9 +40,9 @@ const Navigation2 = () => {
                 </a>
               </li>
 
-              <li class="nav-item dropdown mx-4">
+              <li className="nav-item dropdown mx-4">
                 <a
-                  class="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -52,15 +52,15 @@ const Navigation2 = () => {
                 >
                   Vendor
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">
+                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a className="dropdown-item" href="#">
                     Stores
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Vendor Dashboard
                   </a>
 
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Vendor Membership
                   </a>
                 </div>

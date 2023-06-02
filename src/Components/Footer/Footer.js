@@ -86,33 +86,33 @@ const Footer = () => {
                   <ul className="liststylenonefooterul">
                     <li>
                       <span>
-                        <i class="fa-solid fa-clock pe-2"></i>
+                        <i className="fa-solid fa-clock pe-2"></i>
                       </span>
                       Monday - Friday:
                       <p className="exrtraptag">09.00-18:30</p>
                     </li>
                     <li>
                       <span>
-                        <i class="fa-solid fa-location-pin pe-2"></i>
+                        <i className="fa-solid fa-location-pin pe-2"></i>
                       </span>{" "}
                       1600 7th Avenue,
                       <p className="exrtraptag">Seattle, WA 98101</p>
                     </li>
                     <li>
                       <span>
-                        <i class="fa-solid fa-phone pe-2"></i>
+                        <i className="fa-solid fa-phone pe-2"></i>
                       </span>{" "}
                       +1.888.299.7171
                     </li>
                     <li>
                       <span>
-                        <i class="fa-solid fa-mobile pe-2"></i>
+                        <i className="fa-solid fa-mobile pe-2"></i>
                       </span>{" "}
                       +1.888.299.7272
                     </li>
                     <li>
                       <span>
-                        <i class="fa-solid fa-envelope pe-2"></i>
+                        <i className="fa-solid fa-envelope pe-2"></i>
                       </span>{" "}
                       shop@rigid.com
                     </li>
@@ -148,26 +148,26 @@ const Footer = () => {
                               title="Add to cart"
                             >
                               {" "}
-                              <i class="fa-brands fa-facebook-f"></i>
+                              <i className="fa-brands fa-facebook-f"></i>
                             </span>
                             <span
                               title="Quick View"
                               className="social-iconinfooter mx-3"
                             >
-                              <i class="fa-brands fa-instagram"></i>
+                              <i className="fa-brands fa-instagram"></i>
                             </span>
 
                             <span
                               title="Add to wishlist"
                               className="social-iconinfooter"
                             >
-                              <i class="fa-brands fa-twitter"></i>
+                              <i className="fa-brands fa-twitter"></i>
                             </span>
                             <span
                               title="Add to wishlist"
                               className="social-iconinfooter mx-3"
                             >
-                              <i class="fa-brands fa-youtube"></i>
+                              <i className="fa-brands fa-youtube"></i>
                             </span>
                           </div>
                         </div>

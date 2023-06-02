@@ -109,14 +109,14 @@ const NewListing = () => {
                 />
               </div>
               <div className="textcntinnewlisting ms-3">
-                <h5 class="headingintextcntinnewlisting">
+                <h5 className="headingintextcntinnewlisting">
                   skrama87
                   <span className="spanintextcnt">
                     {" "}
                     shared this listing closet
                   </span>{" "}
                 </h5>
-                <p class="textparainlisting">7 sec ago</p>
+                <p className="textparainlisting">7 sec ago</p>
               </div>
             </div>
 
@@ -139,20 +139,20 @@ const NewListing = () => {
                 />
               </div>
               <div className="textcntinnewlisting ms-3">
-                <h5 class="headingintextcntinnewlisting">
+                <h5 className="headingintextcntinnewlisting">
                   ray234
                   <span className="spanintextcnt">
                     shared this listing closet
                   </span>
                 </h5>
-                <p class="textparainlisting">7 sec ago</p>
+                <p className="textparainlisting">7 sec ago</p>
               </div>
             </div>
 
             <div className="imglistingnewlisting3 mt-3">
               <div className="singleimgcntinbox2">
                 <img
-                  className="card-img-top firstimg"
+                  className="card-img-top firstimg img-fluid"
                   src={newlisting2}
                   style={{
                     borderTopLeftRadius: "14px",
@@ -192,14 +192,14 @@ const NewListing = () => {
                 />
               </div>
               <div className="textcntinnewlisting ms-3">
-                <h5 class="headingintextcntinnewlisting">
+                <h5 className="headingintextcntinnewlisting">
                   skrama87
                   <span className="spanintextcnt">
                     {" "}
                     shared this listing closet
                   </span>{" "}
                 </h5>
-                <p class="textparainlisting">7 sec ago</p>
+                <p className="textparainlisting">7 sec ago</p>
               </div>
             </div>
 
@@ -221,14 +221,14 @@ const NewListing = () => {
                 />
               </div>
               <div className="textcntinnewlisting ms-3">
-                <h5 class="headingintextcntinnewlisting">
+                <h5 className="headingintextcntinnewlisting">
                   ray234
                   <span className="spanintextcnt">
                     {" "}
                     shared this listing closet
                   </span>{" "}
                 </h5>
-                <p class="textparainlisting">7 sec ago</p>
+                <p className="textparainlisting">7 sec ago</p>
               </div>
             </div>
 
@@ -273,14 +273,14 @@ const NewListing = () => {
                 />
               </div>
               <div className="textcntinnewlisting ms-3">
-                <h5 class="headingintextcntinnewlisting">
+                <h5 className="headingintextcntinnewlisting">
                   skrama87
                   <span className="spanintextcnt">
                     {" "}
                     shared this listing closet
                   </span>{" "}
                 </h5>
-                <p class="textparainlisting">7 sec ago</p>
+                <p className="textparainlisting">7 sec ago</p>
               </div>
             </div>
 

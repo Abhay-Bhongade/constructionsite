@@ -17,15 +17,15 @@ const HomePage = () => {
         </div>
         <div className="btncntinhomepage">
           <button className="facebookbtn" type="button">
-            <i class="fa-brands fa-facebook"></i>
+            <i className="fa-brands fa-facebook"></i>
             <span className="ms-2">Continue with Facebook</span>
           </button>
           <button className="googlebtn mt-3" type="button">
-            <i class="fa-brands fa-google"></i>
+            <i className="fa-brands fa-google"></i>
             <span className="ms-2">Continue with Google</span>
           </button>
           <div className="signupwithemailcnt mt-4">
-            <a class="signupwithemail" href="/shop-grid-standard">
+            <a className="signupwithemail" href="/shop-grid-standard">
               Sign up with Email
             </a>
           </div>
@@ -34,7 +34,7 @@ const HomePage = () => {
       <img
         src="/static/media/homepagebanner.7f4356f9e5961c3f10c1.png"
         alt="Image"
-        class="responsive-image"
+        className="responsive-image"
       ></img>
     </div>
   );

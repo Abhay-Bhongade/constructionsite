@@ -10,9 +10,9 @@ const Navigation3 = () => {
     <div className="container-fluid">
       <div className="row">
         <div className="col-3 pt-3">
-          <div class="dropdown dropend">
+          <div className="dropdown dropend">
             <button
-              class="btn  dropdown-toggle"
+              className="btn  dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -22,7 +22,7 @@ const Navigation3 = () => {
               Division 1: Site Construction
             </button>
             <div
-              class="dropdown-menu dropdown-menu-end"
+              className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton"
             >
               <li>
@@ -83,9 +83,9 @@ const Navigation3 = () => {
             </div>
           </div>
 
-          <div class="dropdown dropend">
+          <div className="dropdown dropend">
             <button
-              class="btn  dropdown-toggle"
+              className="btn  dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -95,7 +95,7 @@ const Navigation3 = () => {
               Division 2: Concrete
             </button>
             <div
-              class="dropdown-menu dropdown-menu-end"
+              className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton"
             >
               <li>
@@ -151,9 +151,9 @@ const Navigation3 = () => {
             </div>
           </div>
 
-          <div class="dropdown dropend">
+          <div className="dropdown dropend">
             <button
-              class="btn  dropdown-toggle"
+              className="btn  dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -163,7 +163,7 @@ const Navigation3 = () => {
               Division 3: Masonry{" "}
             </button>
             <div
-              class="dropdown-menu dropdown-menu-end"
+              className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton"
             >
               <li>
@@ -208,9 +208,9 @@ const Navigation3 = () => {
               </li>
             </div>
           </div>
-          <div class="dropdown dropend">
+          <div className="dropdown dropend">
             <button
-              class="btn  dropdown-toggle"
+              className="btn  dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -220,7 +220,7 @@ const Navigation3 = () => {
               Division 4: Metals
             </button>
             <div
-              class="dropdown-menu dropdown-menu-end"
+              className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton"
             >
               <li>
@@ -280,9 +280,9 @@ const Navigation3 = () => {
               </li>
             </div>
           </div>
-          <div class="dropdown dropend">
+          <div className="dropdown dropend">
             <button
-              class="btn  dropdown-toggle"
+              className="btn  dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -292,7 +292,7 @@ const Navigation3 = () => {
               Division 5: Wood and Plastics
             </button>
             <div
-              class="dropdown-menu dropdown-menu-end"
+              className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton"
             >
               <li>
@@ -337,9 +337,9 @@ const Navigation3 = () => {
               </li>
             </div>
           </div>
-          <div class="dropdown dropend">
+          <div className="dropdown dropend">
             <button
-              class="btn  dropdown-toggle"
+              className="btn  dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -349,7 +349,7 @@ const Navigation3 = () => {
               Division 6: Thermal & Moisture Protection
             </button>
             <div
-              class="dropdown-menu dropdown-menu-end"
+              className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton"
             >
               <li>
@@ -405,9 +405,9 @@ const Navigation3 = () => {
               </li>
             </div>
           </div>
-          <div class="dropdown dropend">
+          <div className="dropdown dropend">
             <button
-              class="btn  dropdown-toggle"
+              className="btn  dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -417,7 +417,7 @@ const Navigation3 = () => {
               Division 7: Doors and Windows
             </button>
             <div
-              class="dropdown-menu dropdown-menu-end"
+              className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton"
             >
               <li>
@@ -472,9 +472,9 @@ const Navigation3 = () => {
               </li>
             </div>
           </div>
-          <div class="dropdown dropend">
+          <div className="dropdown dropend">
             <button
-              class="btn  dropdown-toggle"
+              className="btn  dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -484,7 +484,7 @@ const Navigation3 = () => {
               Division 8: Finishes
             </button>
             <div
-              class="dropdown-menu dropdown-menu-end"
+              className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton"
             >
               <li>
@@ -539,9 +539,9 @@ const Navigation3 = () => {
               </li>
             </div>
           </div>
-          <div class="dropdown dropend">
+          <div className="dropdown dropend">
             <button
-              class="btn  dropdown-toggle"
+              className="btn  dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -551,7 +551,7 @@ const Navigation3 = () => {
               Division 9: Specialties
             </button>
             <div
-              class="dropdown-menu dropdown-menu-end"
+              className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton"
             >
               <li>
@@ -606,9 +606,9 @@ const Navigation3 = () => {
               </li>
             </div>
           </div>
-          <div class="dropdown dropend">
+          <div className="dropdown dropend">
             <button
-              class="btn  dropdown-toggle"
+              className="btn  dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -618,7 +618,7 @@ const Navigation3 = () => {
               Division 10: Equipment
             </button>
             <div
-              class="dropdown-menu dropdown-menu-end"
+              className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton"
             >
               <li>
@@ -683,9 +683,9 @@ const Navigation3 = () => {
               </li>
             </div>
           </div>
-          <div class="dropdown dropend">
+          <div className="dropdown dropend">
             <button
-              class="btn  dropdown-toggle"
+              className="btn  dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -695,7 +695,7 @@ const Navigation3 = () => {
               Division 11: Furnishings{" "}
             </button>
             <div
-              class="dropdown-menu dropdown-menu-end"
+              className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton"
             >
               {" "}
@@ -731,9 +731,9 @@ const Navigation3 = () => {
               </li>
             </div>
           </div>
-          <div class="dropdown dropend">
+          <div className="dropdown dropend">
             <button
-              class="btn  dropdown-toggle"
+              className="btn  dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -743,7 +743,7 @@ const Navigation3 = () => {
               Division 12: Special Construction
             </button>
             <div
-              class="dropdown-menu dropdown-menu-end"
+              className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton"
             >
               <li>
@@ -808,9 +808,9 @@ const Navigation3 = () => {
               </li>
             </div>
           </div>
-          <div class="dropdown dropend">
+          <div className="dropdown dropend">
             <button
-              class="btn  dropdown-toggle"
+              className="btn  dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -820,7 +820,7 @@ const Navigation3 = () => {
               Division 13: Conveying Systems
             </button>
             <div
-              class="dropdown-menu dropdown-menu-end"
+              className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton"
             >
               <li>
@@ -870,9 +870,9 @@ const Navigation3 = () => {
               </li>
             </div>
           </div>
-          <div class="dropdown dropend">
+          <div className="dropdown dropend">
             <button
-              class="btn  dropdown-toggle"
+              className="btn  dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -882,7 +882,7 @@ const Navigation3 = () => {
               Division 14: Mechanical
             </button>
             <div
-              class="dropdown-menu dropdown-menu-end"
+              className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton"
             >
               <li>
@@ -942,9 +942,9 @@ const Navigation3 = () => {
               </li>
             </div>
           </div>
-          <div class="dropdown dropend">
+          <div className="dropdown dropend">
             <button
-              class="btn  dropdown-toggle"
+              className="btn  dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -954,7 +954,7 @@ const Navigation3 = () => {
               Division 15: Electrical
             </button>
             <div
-              class="dropdown-menu dropdown-menu-end"
+              className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton"
             >
               <li>
@@ -999,9 +999,9 @@ const Navigation3 = () => {
               </li>
             </div>
           </div>
-          <div class="dropdown dropend">
+          <div className="dropdown dropend">
             <button
-              class="btn  dropdown-toggle"
+              className="btn  dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -1011,16 +1011,16 @@ const Navigation3 = () => {
               Miscellaneous Items
             </button>
             <div
-              class="dropdown-menu dropdown-menu-end"
+              className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton"
             >
-              <a class="dropdown-item" href="#">
+              <a className="dropdown-item" href="#">
                 Action
               </a>
-              <a class="dropdown-item" href="#">
+              <a className="dropdown-item" href="#">
                 Another action
               </a>
-              <a class="dropdown-item" href="#">
+              <a className="dropdown-item" href="#">
                 Something else here
               </a>
             </div>
