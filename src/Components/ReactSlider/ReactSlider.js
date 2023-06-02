@@ -70,7 +70,7 @@ const ReactSlider = () => {
               <div className="card-body">
                 <h5 className="card-title">Blue PVC Pipe</h5>
                 <p className="card-text">Stainless Steel</p>
-                <p className="card-text">₹2,200</p>
+                <p className="card-text">$2,00</p>
               </div>
             </div>
             <div className="card mx-2" style={{ width: "14.5rem" }}>
@@ -78,7 +78,7 @@ const ReactSlider = () => {
               <div className="card-body">
                 <h5 className="card-title">Stainless Steel Joint Knife</h5>
                 <p className="card-text">Stainless Steel</p>
-                <p className="card-text">₹2,200</p>
+                <p className="card-text">$300</p>
               </div>
             </div>
             <div className="card mx-2" style={{ width: "14.5rem" }}>
@@ -86,7 +86,7 @@ const ReactSlider = () => {
               <div className="card-body">
                 <h5 className="card-title">Komelon Gripper Measure</h5>
                 <p className="card-text">Stainless Steel</p>
-                <p className="card-text">₹2,200</p>
+                <p className="card-text">$400</p>
               </div>
             </div>
             <div className="card mx-2" style={{ width: "14.5rem" }}>
@@ -94,7 +94,7 @@ const ReactSlider = () => {
               <div className="card-body">
                 <h5 className="card-title">Plastering Trowel</h5>
                 <p className="card-text">Stainless Steel</p>
-                <p className="card-text">₹2,200</p>
+                <p className="card-text">$500</p>
               </div>
             </div>
             <div className="card mx-2" style={{ width: "14.5rem" }}>
@@ -102,7 +102,7 @@ const ReactSlider = () => {
               <div className="card-body">
                 <h5 className="card-title">3-Piece Wood Chisel</h5>
                 <p className="card-text">Stainless Steel</p>
-                <p className="card-text">₹2,200</p>
+                <p className="card-text">$600</p>
               </div>
             </div>
             <div className="card mx-2" style={{ width: "14.5rem" }}>
@@ -110,7 +110,7 @@ const ReactSlider = () => {
               <div className="card-body">
                 <h5 className="card-title">Scaffolding Forged Iron</h5>
                 <p className="card-text">Stainless Steel</p>
-                <p className="card-text">₹2,200</p>
+                <p className="card-text">$700</p>
               </div>
             </div>
             <div className="card mx-2" style={{ width: "14.5rem" }}>
@@ -118,7 +118,7 @@ const ReactSlider = () => {
               <div className="card-body">
                 <h5 className="card-title">Roughcheck Earth </h5>
                 <p className="card-text">Stainless Steel</p>
-                <p className="card-text">₹2,200</p>
+                <p className="card-text">$800</p>
               </div>
             </div>
             <div className="card mx-2" style={{ width: "14.5rem" }}>
@@ -126,7 +126,7 @@ const ReactSlider = () => {
               <div className="card-body">
                 <h5 className="card-title">Roughcheck Earth </h5>
                 <p className="card-text">Stainless Steel</p>
-                <p className="card-text">₹2,200</p>
+                <p className="card-text">$900</p>
               </div>
             </div>
           </Slider>
