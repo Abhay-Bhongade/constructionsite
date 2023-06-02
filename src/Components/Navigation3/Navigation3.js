@@ -1029,7 +1029,7 @@ const Navigation3 = () => {
         <div className="col-md-9 p-0 m-0">
           <div className="imgcntinNavigationPage">
             <img
-              className="card-img-top img-fluid"
+              className="card-img-top img-fluid bnimg"
               src={homepage70000}
               alt="Card image cap"
             />
