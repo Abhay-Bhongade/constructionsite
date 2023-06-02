@@ -10,13 +10,11 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%;
-  height: 100vh;
 }
 .bnimg {
   width: 100%;
   height: 100vh;
-  padding-bottom: 5px;
+  padding: 2px 0px;
 }
 .headingcntinnav3page {
   position: absolute;
