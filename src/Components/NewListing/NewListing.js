@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import profilepic1 from "../../Images/profilepic.png";
 import profilepic2 from "../../Images/profilpic2.jpg";
 import profilepic3 from "../../Images/profilpic3.jpg";
-
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import newlisting1 from "../../Images/newlisting1.png";
 import newlisting2 from "../../Images/newimguse.png";
 import newlisting3 from "../../Images/newlisting3.png";
@@ -14,75 +15,219 @@ import newlisting7 from "../../Images/newlisting7.png";
 import newlisting8 from "../../Images/newlisting8.png";
 import newlisting9 from "../../Images/newlisting9.png";
 import "../NewListing/NewListing.css";
-import bnimg1 from "../../Images/bnimg1.png";
-import bnimg2 from "../../Images/bnimg2.png";
-import bnimg3 from "../../Images/bnimg33.jpg";
+import bnimg1 from "../../Images/like1.png";
+import bnimg2 from "../../Images/like2.png";
+import bnimg3 from "../../Images/like3.png";
 
 const NewListing = () => {
+  const [priceRange, setPriceRange] = useState("");
+  const [sortBy, setSortBy] = useState("");
+  const [rating, setRating] = useState("");
+
+  const handlePriceRangeChange = (e) => {
+    setPriceRange(e.target.value);
+  };
+
+  const handleSortByChange = (e) => {
+    setSortBy(e.target.value);
+  };
+
+  const handleRatingChange = (e) => {
+    setRating(e.target.value);
+  };
   return (
     <div className="container my-5 cntinnewlisting">
       <div className="row">
-        <div className="col-md-7">
-          <h1 className="text-center my-3 headinginproduct">
-            You Might Also Like
+        <div className="col-md-2 card pb-0 mb-0">
+          <h1 class="my-3 headinginproduct" style={{ textAlign: "left" }}>
+            Filters
           </h1>
-
-          <div className="box1 my-4">
-            <div className="mt-3">
-              <div
-                className="oneimgcntinnewlisting bnimg1cnt"
-                style={{ position: "relative" }}
-              >
-                {/* <div className="iconcntinlisting">
-                  <span>
-                    {" "}
-                    <i className="fa fa-shopping-cart "></i>
-                  </span>
-                  <span>
-                    {" "}
-                    <i className="fa fa-heart"></i>
-                  </span>
-                </div> */}
-                <img
-                  className="card-img-top "
-                  src={bnimg1}
-                  alt="Card image cap"
+          <div className=" filter-sectioncnt">
+            <div className="filter-section">
+              <h4 className="filtersectionheading my-3">Price</h4>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="priceRange"
+                  id="priceRange1"
+                  value="under100"
+                  checked={priceRange === "under100"}
+                  onChange={handlePriceRangeChange}
                 />
+                <label className="form-check-label" htmlFor="priceRange1">
+                  Under $100
+                </label>
               </div>
-              <div
-                className="twoimglsinbnsection"
-                style={{ position: "relative" }}
-              >
-                {/* <div className="iconcntinlisting2">
-                  <span>
-                    {" "}
-                    <i className="fa fa-shopping-cart "></i>
-                  </span>
-                  <span>
-                    {" "}
-                    <i className="fa fa-heart"></i>
-                  </span>
-                </div>{" "}
-                <div className="iconcntinlisting3">
-                  <span>
-                    {" "}
-                    <i className="fa fa-shopping-cart "></i>
-                  </span>
-                  <span>
-                    {" "}
-                    <i className="fa fa-heart"></i>
-                  </span>
-                </div> */}
-                <img
-                  className="card-img-top imgtwoinbgsec"
-                  src={bnimg2}
-                  alt="Card image cap"
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="priceRange"
+                  id="priceRange2"
+                  value="under200"
+                  checked={priceRange === "under200"}
+                  onChange={handlePriceRangeChange}
                 />
-                <img
-                  className="card-img-top imgthreeinbgsec ms-2"
-                  src={bnimg3}
-                  alt="Card image cap"
+                <label className="form-check-label" htmlFor="priceRange2">
+                  Under $200
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="priceRange"
+                  id="priceRange2"
+                  value="under200"
+                  checked={priceRange === "under200"}
+                  onChange={handlePriceRangeChange}
                 />
+                <label className="form-check-label" htmlFor="priceRange2">
+                  Under $300
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="priceRange"
+                  id="priceRange2"
+                  value="under200"
+                  checked={priceRange === "under200"}
+                  onChange={handlePriceRangeChange}
+                />
+                <label className="form-check-label" htmlFor="priceRange2">
+                  Under $400
+                </label>
+              </div>{" "}
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="priceRange"
+                  id="priceRange2"
+                  value="under200"
+                  checked={priceRange === "under200"}
+                  onChange={handlePriceRangeChange}
+                />
+                <label className="form-check-label" htmlFor="priceRange2">
+                  Under $500
+                </label>
+              </div>
+              <h4 className="filtersectionheading my-3">Sort By</h4>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="sortBy"
+                  id="sortBy1"
+                  value="popularity"
+                  checked={sortBy === "popularity"}
+                  onChange={handleSortByChange}
+                />
+                <label className="form-check-label" htmlFor="sortBy1">
+                  Popularity
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="sortBy"
+                  id="sortBy2"
+                  value="priceHighToLow"
+                  checked={sortBy === "priceHighToLow"}
+                  onChange={handleSortByChange}
+                />
+                <label className="form-check-label" htmlFor="sortBy2">
+                  Price High to Low
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="sortBy"
+                  id="sortBy3"
+                  value="priceLowToHigh"
+                  checked={sortBy === "priceLowToHigh"}
+                  onChange={handleSortByChange}
+                />
+                <label className="form-check-label" htmlFor="sortBy3">
+                  Price Low to High
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="sortBy"
+                  id="sortBy4"
+                  value="newestFirst"
+                  checked={sortBy === "newestFirst"}
+                  onChange={handleSortByChange}
+                />
+                <label className="form-check-label" htmlFor="sortBy4">
+                  Newest First
+                </label>
+              </div>
+              <h4 className="filtersectionheading my-3">Rating</h4>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="rating"
+                  id="rating1"
+                  value="4starAbove"
+                  checked={rating === "4starAbove"}
+                  onChange={handleRatingChange}
+                />
+                <label className="form-check-label" htmlFor="rating1">
+                  4★ &amp; above
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="rating"
+                  id="rating2"
+                  value="3starAbove"
+                  checked={rating === "3starAbove"}
+                  onChange={handleRatingChange}
+                />
+                <label className="form-check-label" htmlFor="rating2">
+                  3★ &amp; above
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="rating"
+                  id="rating3"
+                  value="2starAbove"
+                  checked={rating === "2starAbove"}
+                  onChange={handleRatingChange}
+                />
+                <label className="form-check-label" htmlFor="rating3">
+                  2★ &amp; above
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="rating"
+                  id="rating4"
+                  value="1starAbove"
+                  checked={rating === "1starAbove"}
+                  onChange={handleRatingChange}
+                />
+                <label className="form-check-label" htmlFor="rating4">
+                  1★ &amp; above
+                </label>
               </div>
             </div>
           </div>
@@ -290,6 +435,69 @@ const NewListing = () => {
                 src={newlisting9}
                 alt="Card image cap"
               />
+            </div>
+          </div>
+        </div>
+        <div className="col-md-5">
+          <h1 className="text-center my-3 headinginproduct">
+            You Might Also Like
+          </h1>
+
+          <div className="box1 my-4">
+            <div className="mt-3">
+              <div
+                className="oneimgcntinnewlisting bnimg1cnt"
+                style={{ position: "relative" }}
+              >
+                <div className="iconcntinlisting">
+                  <span>
+                    <ShoppingCartOutlinedIcon />
+                  </span>
+                  <span className="ms-2">
+                    <FavoriteBorderOutlinedIcon />
+                  </span>
+                </div>
+                <img
+                  className="card-img-top "
+                  src={bnimg1}
+                  alt="Card image cap"
+                />
+              </div>
+              <div
+                className="twoimglsinbnsection"
+                style={{ position: "relative" }}
+              >
+                <div className="iconcntinlisting2">
+                  {/* <span>
+                    {" "}
+                    <ShoppingCartOutlinedIcon />
+                  </span>
+                  <span>
+                    {" "}
+                    <FavoriteBorderOutlinedIcon />
+                  </span> */}
+                </div>{" "}
+                <div className="iconcntinlisting3">
+                  <span>
+                    {" "}
+                    <ShoppingCartOutlinedIcon />
+                  </span>
+                  <span>
+                    {" "}
+                    <FavoriteBorderOutlinedIcon />
+                  </span>
+                </div>
+                <img
+                  className="card-img-top imgtwoinbgsec"
+                  src={bnimg2}
+                  alt="Card image cap"
+                />
+                <img
+                  className="card-img-top imgthreeinbgsec ms-2"
+                  src={bnimg3}
+                  alt="Card image cap"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -74,15 +74,14 @@
 }
 .iconcntinlisting {
   position: absolute;
-  top: 0;
-  right: 0;
+  right: 5px;
+  bottom: 5px;
 }
 .iconcntinlisting span .fa {
-  color: #000 !important;
   font-size: 25px !important;
 }
 .iconcntinlisting2 span .fa {
-  color: #fff !important;
+  color: blue !important;
   font-size: 25px !important;
   margin-top: 1rem;
 }
@@ -94,12 +93,12 @@
 
 .iconcntinlisting2 {
   position: absolute;
-  top: 0;
+  top: 15px;
   right: 0;
 }
 .iconcntinlisting3 {
   position: absolute;
-  top: 0;
+  top: 15px;
   right: 52%;
 }
 .bnimg1cnt {
@@ -110,4 +109,22 @@
   justify-content: space-between;
   align-items: center;
   height: 40vh;
+  width: 98%;
+}
+
+.filtersectionheading {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #000;
+}
+.form-check-label {
+  font-size: 14px !important;
+  font-weight: 500;
+  color: #000;
+}
+.filter-sectioncnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
