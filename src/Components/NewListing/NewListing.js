@@ -246,6 +246,7 @@ const NewListing = () => {
             scrollbarWidth: "thin",
             scrollbarColor: "blue",
             scrollbarTrackColor: "blue",
+            scrollBehavior: "smooth",
           }}
         >
           <h1 className="text-center mt-3 mb-5 headinginproduct section-title-8 bottom-border ">
