@@ -1026,10 +1026,10 @@ const Navigation3 = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-9">
+        <div className="col-md-9 p-0 m-0">
           <div className="imgcntinNavigationPage">
             <img
-              className="card-img-top"
+              className="card-img-top img-fluid"
               src={homepage70000}
               alt="Card image cap"
             />
