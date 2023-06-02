@@ -37,9 +37,15 @@ const NewListing = () => {
   };
   return (
     <div className="container my-5 cntinnewlisting">
-      <div className="row">
-        <div className="col-md-2 card pb-0 mb-0">
-          <h1 class="my-3 headinginproduct" style={{ textAlign: "left" }}>
+      <div className="row gx-5">
+        <div
+          className="col-md-2 card pb-0 mb-0"
+          style={{ backgroundColor: "#f7f7f7" }}
+        >
+          <h1
+            class="my-3 headinginproduct headinginproductinnewlisting"
+            style={{ textAlign: "left" }}
+          >
             Filters
           </h1>
           <div className=" filter-sectioncnt">
@@ -242,7 +248,9 @@ const NewListing = () => {
             scrollbarTrackColor: "blue",
           }}
         >
-          <h1 className="text-center my-3 headinginproduct">New Listing</h1>
+          <h1 className="text-center mt-3 mb-5 headinginproduct section-title-8 bottom-border ">
+            New Listing
+          </h1>
 
           <div className="box1">
             <div className="profilcnt">
@@ -439,7 +447,7 @@ const NewListing = () => {
           </div>
         </div>
         <div className="col-md-5">
-          <h1 className="text-center my-3 headinginproduct">
+          <h1 className="text-center my-3 headinginproduct headinginproductinnewlisting">
             You Might Also Like
           </h1>
 
