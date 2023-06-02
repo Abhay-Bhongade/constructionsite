@@ -5,17 +5,17 @@
 .dropdown-menu-end {
   left: 100%;
 }
-
+.bnimg {
+  height: 100vh;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
 .imgcntinNavigationPage {
   position: relative;
   display: flex;
   align-items: center;
 }
-.bnimg {
-  width: 100%;
-  height: 95vh;
-  padding: 2px 0px;
-}
+
 .headingcntinnav3page {
   position: absolute;
   top: 55%;
