@@ -1010,20 +1010,6 @@ const Navigation3 = () => {
             >
               Miscellaneous Items
             </button>
-            <div
-              className="dropdown-menu dropdown-menu-end"
-              aria-labelledby="dropdownMenuButton"
-            >
-              <a className="dropdown-item" href="#">
-                Action
-              </a>
-              <a className="dropdown-item" href="#">
-                Another action
-              </a>
-              <a className="dropdown-item" href="#">
-                Something else here
-              </a>
-            </div>
           </div>
         </div>
         <div className="col-md-9 p-0 m-0">
