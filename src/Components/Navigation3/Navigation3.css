@@ -16,6 +16,7 @@
 .bnimg {
   width: 100%;
   height: 100vh;
+  padding-bottom: 5px;
 }
 .headingcntinnav3page {
   position: absolute;
