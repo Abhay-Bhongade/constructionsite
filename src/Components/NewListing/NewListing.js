@@ -4,7 +4,7 @@ import profilepic2 from "../../Images/profilpic2.jpg";
 import profilepic3 from "../../Images/profilpic3.jpg";
 
 import newlisting1 from "../../Images/newlisting1.png";
-import newlisting2 from "../../Images/newlisting2.png";
+import newlisting2 from "../../Images/newimguse.png";
 import newlisting3 from "../../Images/newlisting3.png";
 import newlisting4 from "../../Images/newlisting4.png";
 import newlisting5 from "../../Images/newlisting5.png";
