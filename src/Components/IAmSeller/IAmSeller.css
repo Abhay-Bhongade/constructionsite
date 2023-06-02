@@ -34,7 +34,7 @@
   position: absolute;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 420px;
+  width: 440px;
 }
 
 .section-title-11 {
@@ -46,11 +46,11 @@
   bottom: 0;
   content: "";
   height: 1px;
-  left: 77%;
+  left: 75%;
   position: absolute;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 440px;
+  width: 470px;
 }
 .mrintextcntinIamSeller {
   margin-right: 5rem;

@@ -18,8 +18,9 @@ const IAmSeller = () => {
               <h3 className="listitheading">DISCOVER ITEMS</h3>
             </div>
             <p className="parainiamseller mt-2">
-              Take a photo and upload to your closet in less <br /> than 60
-              seconds - right from your phone!
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              <br />
+              elit sed do eiusmod tempor incididunt ut labore et.
             </p>
           </div>
         </div>
@@ -31,8 +32,9 @@ const IAmSeller = () => {
               <h3 className="listitheading">GET STYLED</h3>
             </div>
             <p className="parainiamseller mt-2">
-              Take a photo and upload to your closet in less <br /> than 60
-              seconds - right from your phone!
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              <br />
+              elit sed do eiusmod tempor incididunt ut labore et.
             </p>
           </div>
           <div className="imgcntinIamSeller msinimgcnt">
@@ -50,8 +52,9 @@ const IAmSeller = () => {
               <h3 className="listitheading">SPREAD THE LOVE</h3>
             </div>
             <p className="parainiamseller mt-2">
-              Take a photo and upload to your closet in less <br /> than 60
-              seconds - right from your phone!
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              <br />
+              elit sed do eiusmod tempor incididunt ut labore et.
             </p>
           </div>
         </div>

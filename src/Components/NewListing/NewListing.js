@@ -450,12 +450,12 @@ const NewListing = () => {
                 style={{ position: "relative" }}
               >
                 <div className="iconcntinlisting">
-                  <span>
+                  {/* <span>
                     <ShoppingCartOutlinedIcon />
                   </span>
                   <span className="ms-2">
                     <FavoriteBorderOutlinedIcon />
-                  </span>
+                  </span> */}
                 </div>
                 <img
                   className="card-img-top "
@@ -478,14 +478,14 @@ const NewListing = () => {
                   </span> */}
                 </div>{" "}
                 <div className="iconcntinlisting3">
-                  <span>
+                  {/* <span>
                     {" "}
                     <ShoppingCartOutlinedIcon />
                   </span>
                   <span>
                     {" "}
                     <FavoriteBorderOutlinedIcon />
-                  </span>
+                  </span> */}
                 </div>
                 <img
                   className="card-img-top imgtwoinbgsec"
