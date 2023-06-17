@@ -16,6 +16,7 @@ import ComboComponent from "./Components/ComboComponent";
 import ComboNew from "./Components/ComboNew";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import BecomeASeller from "./Components/BecomeASeller";
 function App() {
   return (
     <div>
@@ -24,6 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<ComboComponent />} />
         <Route path="/combonew" element={<ComboNew />} />
+        <Route path="/becomeseller" element={<BecomeASeller />} />
       </Routes>
     </div>
   );

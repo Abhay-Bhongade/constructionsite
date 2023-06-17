@@ -95,6 +95,48 @@
   background: #f5f5f5 !important;
 }
 
+.btncntinNavbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.facebookbtninNavbar {
+  width: 20rem;
+  height: 2rem;
+  border-radius: 4px;
+  color: #fcfbfb;
+  border-color: #3d5a98;
+  background: #3d5a98;
+  border: none;
+  font-size: 0.825rem;
+  font-weight: 400;
+  text-shadow: 0 -1px -1px #a22d1f;
+
+  transition: all 0.15s ease-in-out;
+}
+
+.googlebtninNavbar {
+  width: 20rem;
+  height: 2rem;
+  border-radius: 4px;
+  color: #6a6a6a;
+  border-color: #eaeae9;
+  background: #eaeae9;
+  border: none;
+  font-size: 0.825rem;
+  font-weight: 400;
+  text-shadow: 0 -1px -1px #a22d1f;
+  transition: all 0.15s ease-in-out;
+}
+.twoinputfieldcnt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerloginsignup :hover {
+  cursor: pointer;
+}
 @media screen and (min-width: 769px) {
   .dropend:hover > .dropdown-menu {
     position: absolute;
@@ -113,4 +155,31 @@
     left: auto;
     z-index: 0;
   }
+}
+
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+    0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+  margin: 32px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: calc(100% - 16px);
+  max-width: 600px;
+  width: 750px;
+}
+
+.css-h52lfd-MuiFormLabel-root-MuiInputLabel-root {
+  line-height: 0.9em !important;
+  height: 1.5rem !important;
 }
