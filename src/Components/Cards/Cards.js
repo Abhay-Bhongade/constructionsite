@@ -6,7 +6,7 @@ import "../Cards/Cards.css";
 
 const Cards = () => {
   return (
-    <div className="container cardcmpoverlap">
+    <div className="container my-5">
       <div className="row">
         <div className="col-lg-4 col-md-6 mb-30">
           <div className="category-grid">

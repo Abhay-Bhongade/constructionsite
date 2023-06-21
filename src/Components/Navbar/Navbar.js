@@ -8,23 +8,50 @@ import {
   TextField,
   Button,
 } from "@mui/material";
+import {
+  register,
+  reset,
+  logout,
+  login,
+} from "../../rtk/features/auth/authSlice";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import InputAdornment from "@mui/material/InputAdornment";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
+import { toast } from "react-toastify";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import Form from "react-bootstrap/Form";
+import "yup-phone";
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
+import { useSelector, useDispatch } from "react-redux";
 import Select from "@mui/material/Select";
 import "../Navigation/Navigation.css";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import SearchIcon from "@mui/icons-material/Search";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
-import Badge from "@mui/material/Badge";
+import facebookimg from "../../Images/iconsfacebook.png";
+import googleimg from "../../Images/iconsgoogle.png";
 import "../Navbar/Navbar.css";
+import Navigation4 from "../Navigation4/Navigation4";
+
+const initialValues = {
+  firstName: "",
+  lastName: "",
+  userName: "",
+  email: "",
+  mobilenumber: "",
+  password: "",
+};
+
 const Navbar = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const { user, isLoading, isError, isSuccess, message } = useSelector(
+    (state) => state.auth
+  );
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState(null);
   const [isSearchVisible, setIsSearchVisible] = useState(false);
@@ -36,21 +63,13 @@ const Navbar = () => {
   const handleTogglePassword = () => {
     setShowPassword((prevShowPassword) => !prevShowPassword);
   };
-  const BecomeASellerNavigate = () => {
-    Navigate("/becomeseller");
-  };
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [rememberMe, setRememberMe] = useState(false);
+
   const Navigate = useNavigate();
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   const [country, setCountry] = React.useState("");
 
-  const handleChange = (event) => {
-    setCountry(event.target.value);
-  };
   const handleCategoryClick = (index) => {
     if (activeCategory === index) {
       setActiveCategory(null);
@@ -79,34 +98,85 @@ const Navbar = () => {
     setIsSignUpinFormOpen(false);
   };
 
-  const handleUsernameChange = (e) => {
-    setUsername(e.target.value);
+  const signupSchema = Yup.object({
+    firstName: Yup.string()
+      .matches(/^[A-Za-z]+$/, "Please enter valid name")
+      .min(2)
+      .max(40)
+      .required("firstName   is required"),
+    lastName: Yup.string()
+      .matches(/^[A-Za-z]+$/, "Please enter valid name")
+      .min(2)
+      .max(40)
+      .required("lastName is required"),
+    userName: Yup.string()
+      .matches(/^[a-zA-Z0-9]+$/, "userName must be Alphanumeric")
+      .min(4)
+      .max(10)
+      .required("userName is required"),
+    mobilenumber: Yup.string()
+      .matches(/^[0-9]{10}$/, "mobile number is not valid")
+      .required("mobile number is required"),
+    email: Yup.string()
+      .email("Email must be in a correct format")
+      .required("Please enter your email"),
+    password: Yup.string().min(8).required("password is required"),
+    country: Yup.string()
+      .oneOf(
+        ["United States", "Canada", "Mexico"],
+        "country selection is required"
+      )
+      .required("Please select at least one country"),
+  });
+
+  const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
+    useFormik({
+      initialValues,
+      validationSchema: signupSchema,
+      onSubmit: (values, action) => {
+        if (values) {
+          console.log("Registration ~ values", values);
+          dispatch(register(values));
+          toast.success("User Registration Sucessfull");
+          handleCloseSignupForm();
+          // dispatch(logout());
+          // dispatch(reset());
+          // navigate("/");
+          action.resetForm();
+        } else if (isError) {
+          toast.error(message);
+        }
+      },
+    });
+  console.log("Registration ~ errors", errors);
+
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+  const { email, password } = formData;
+
+  const onChange2 = (e) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
   };
 
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-  };
-
-  const handleRememberMeChange = (e) => {
-    setRememberMe(e.target.checked);
-  };
-
-  const handleLoginSubmit = (e) => {
+  const handleSubmit2 = (e) => {
     e.preventDefault();
-    // Handle login logic here
-    Navigate("/combonew");
-    console.log("Username:", username);
-    console.log("Password:", password);
-    console.log("Remember Me:", rememberMe);
-    // Reset form fields
-    setUsername("");
-    setPassword("");
-    // Close the login form
-    setIsLoginFormOpen(false);
+    console.log("login click");
+    const userData = {
+      email,
+      password,
+    };
+    dispatch(login(userData));
+    console.log("userdata in loginform", userData);
+    navigate("/becomeseller");
   };
 
   return (
-    <div className="container-fluid navbar-light bg-light">
+    <div className="container-fluid navbar-light bg-light p-0 m-0">
       <div className="row">
         <div className="col-12">
           <nav className="navbar navbar-light bg-light justify-content-between mx-5">
@@ -119,13 +189,6 @@ const Navbar = () => {
               />
             </a>
             <div className="headerloginsignup">
-              <span
-                onClick={BecomeASellerNavigate}
-                className="me-5 signinsignupanchor"
-              >
-                {" "}
-                Become a Seller
-              </span>
               <a
                 href="/#"
                 className="pe-2 signinsignupanchor"
@@ -174,17 +237,17 @@ const Navbar = () => {
             textAlign: "center",
             lineHeight: "28px",
             fontWeight: "700",
-            fontSize: "1rem",
+            fontSize: "1.5rem",
           }}
         >
           Login
         </DialogTitle>
         <DialogContent style={{ height: "500px" }}>
-          <form onSubmit={handleLoginSubmit}>
+          <Form onSubmit={handleSubmit2}>
             <div>
               <label
                 className="mb-1"
-                htmlFor="username"
+                htmlFor="userName"
                 style={{
                   lineHeight: "26px",
                   fontWeight: "500",
@@ -194,16 +257,20 @@ const Navbar = () => {
                 USERNAME OR EMAIL ADDRESS{" "}
               </label>
               <TextField
-                id="username"
-                type="text"
-                value={username}
-                onChange={handleUsernameChange}
+                id="email"
+                type="email"
+                name="email"
+                onChange={onChange2}
+                value={email}
                 variant="outlined"
                 fullWidth
-                required
                 autoComplete="off"
+                size="small"
+                required
+                label="Enter Username or Email Address"
               />
             </div>
+
             <div className="my-4">
               <label
                 className="mb-1"
@@ -220,8 +287,9 @@ const Navbar = () => {
                 fullWidth
                 id="password"
                 type={showPassword ? "text" : "password"}
+                onChange={onChange2}
                 value={password}
-                onChange={handlePasswordChange}
+                name="password"
                 variant="outlined"
                 required
                 autoComplete="off"
@@ -238,25 +306,17 @@ const Navbar = () => {
                 }}
               />
             </div>
-            <div>
-              <label htmlFor="remember-me">
-                <input
-                  id="remember-me"
-                  type="checkbox"
-                  checked={rememberMe}
-                  onChange={handleRememberMeChange}
-                />
-                <span
-                  className="ms-2"
-                  style={{
-                    fontWeight: "500",
-                    fontSize: "12px",
-                    color: "#333333",
-                  }}
-                >
-                  Remember Me
-                </span>
-              </label>
+
+            <div className="ms-1">
+              <FormControlLabel
+                control={<Checkbox defaultChecked />}
+                label="Stay Signed In"
+                size="small"
+                sx={{
+                  "& .MuiSvgIcon-root": { fontSize: 18 },
+                  fontSize: 10, // Decreased font size (adjust the value as needed)
+                }}
+              />
             </div>
             <DialogActions
               style={{ justifyContent: "flex-start" }}
@@ -271,7 +331,7 @@ const Navbar = () => {
                 Login
               </Button>
             </DialogActions>
-          </form>
+          </Form>
           <div className="forgot-password" style={{ textAlign: "start" }}>
             <a href="/forgot-password">Lost your password?</a>
           </div>
@@ -316,12 +376,20 @@ const Navbar = () => {
         </p>
         <div className="btncntinNavbar">
           <button className="facebookbtninNavbar" type="button">
-            <i className="fa-brands fa-facebook"></i>
+            <img src={facebookimg} width={16} height={16} alt="facebook" />
             <span className="ms-2">Continue with Facebook</span>
           </button>
           <button className="googlebtninNavbar mt-3" type="button">
-            <i className="fa-brands fa-google"></i>
-            <span className="ms-2">Continue with Google</span>
+            <img
+              src={googleimg}
+              width={13}
+              height={13}
+              alt="google"
+              style={{ marginLeft: "-16px" }}
+            />{" "}
+            <span className="ms-2" style={{ marginLeft: "-9px" }}>
+              Continue with Google
+            </span>
           </button>
         </div>
 
@@ -350,50 +418,71 @@ const Navbar = () => {
         </Box>
 
         <DialogContent>
-          <form onSubmit={handleLoginSubmit}>
-            <div className="twoinputfieldcnt mt-2 mb-3">
+          <Form onSubmit={handleSubmit}>
+            <div className="twoinputfieldcnt mt-2 mb-4">
               <TextField
                 fullWidth
-                id="firstname"
+                id="firstName"
                 type="text"
-                value={username}
-                onChange={handleUsernameChange}
+                name="firstName"
+                value={values.firstName}
+                onChange={handleChange}
                 variant="outlined"
-                required
                 autoComplete="off"
                 size="small"
                 className="mx-3"
                 label="First Name"
-                inputProps={{
-                  autoComplete: "off",
+                InputLabelProps={{
+                  style: {
+                    fontSize: "14px",
+                    color: "#9b9691",
+                  },
                 }}
               />
 
               <TextField
                 fullWidth
-                id="lastname"
+                id="lastName"
                 type="text"
-                value={password}
-                onChange={handlePasswordChange}
+                value={values.lastName}
+                name="lastName"
+                onChange={handleChange}
                 variant="outlined"
-                required
                 autoComplete="off"
                 size="small"
                 label="Last Name"
                 inputProps={{
                   autoComplete: "off",
                 }}
+                InputLabelProps={{
+                  style: {
+                    fontSize: "14px",
+                    color: "#9b9691",
+                  },
+                }}
               />
             </div>
-            <div className="twoinputfieldcnt  my-4">
+            <div className="errorcnt">
+              <div className="errortext">
+                {errors.firstName && touched.firstName ? (
+                  <p className="form-error">{errors.firstName}</p>
+                ) : null}{" "}
+              </div>
+              <div className="errortext">
+                {errors.lastName && touched.lastName ? (
+                  <p className="form-error">{errors.lastName}</p>
+                ) : null}
+              </div>
+            </div>
+            <div className="twoinputfieldcnt  mb-4">
               <TextField
                 fullWidth
                 id="email"
                 type="email"
-                value={username}
-                onChange={handleUsernameChange}
+                name="email"
+                value={values.email}
+                onChange={handleChange}
                 variant="outlined"
-                required
                 autoComplete="off"
                 size="small"
                 className="mx-3"
@@ -401,39 +490,68 @@ const Navbar = () => {
                 inputProps={{
                   autoComplete: "off",
                 }}
+                InputLabelProps={{
+                  style: {
+                    fontSize: "14px",
+                    color: "#9b9691",
+                  },
+                }}
               />
 
               <TextField
                 fullWidth
                 id="mobilenumber"
                 type="text"
-                value={password}
-                onChange={handlePasswordChange}
+                value={values.mobilenumber}
+                onChange={handleChange}
                 variant="outlined"
-                required
                 autoComplete="off"
                 size="small"
                 label="Mobile Number"
                 inputProps={{
                   autoComplete: "off",
                 }}
+                InputLabelProps={{
+                  style: {
+                    fontSize: "14px",
+                    color: "#9b9691",
+                  },
+                }}
               />
             </div>
-            <div className="twoinputfieldcnt  my-4">
+            <div className="errorcnt">
+              <div className="errortext">
+                {errors.email && touched.email ? (
+                  <p className="form-error">{errors.email}</p>
+                ) : null}{" "}
+              </div>
+              <div className="errortext">
+                {errors.mobilenumber && touched.mobilenumber ? (
+                  <p className="form-error">{errors.mobilenumber}</p>
+                ) : null}
+              </div>{" "}
+            </div>
+
+            <div className="twoinputfieldcnt mb-4">
               <TextField
                 fullWidth
-                id="username"
+                id="userName"
                 type="text"
-                value={username}
-                onChange={handleUsernameChange}
+                value={values.userName}
+                onChange={handleChange}
                 variant="outlined"
-                required
                 autoComplete="off"
                 size="small"
                 className="mx-3"
-                label="Username"
+                label="userName"
                 inputProps={{
                   autoComplete: "off",
+                }}
+                InputLabelProps={{
+                  style: {
+                    fontSize: "14px",
+                    color: "#9b9691",
+                  },
                 }}
               />
 
@@ -441,13 +559,19 @@ const Navbar = () => {
                 fullWidth
                 id="password"
                 type={showPassword ? "text" : "password"}
-                value={password}
-                onChange={handlePasswordChange}
+                value={values.password}
+                name="password"
+                onChange={handleChange}
                 variant="outlined"
-                required
                 autoComplete="off"
                 size="small"
                 label="Password"
+                InputLabelProps={{
+                  style: {
+                    fontSize: "14px",
+                    color: "#9b9691",
+                  },
+                }}
                 InputProps={{
                   endAdornment: (
                     <InputAdornment position="end">
@@ -459,56 +583,79 @@ const Navbar = () => {
                 }}
               />
             </div>
+            <div className="errorcnt">
+              <div className="errortext">
+                {errors.userName && touched.userName ? (
+                  <p className="form-error">{errors.userName}</p>
+                ) : null}{" "}
+              </div>{" "}
+              <div className="errortext">
+                {errors.password && touched.password ? (
+                  <p className="form-error">{errors.password}</p>
+                ) : null}
+              </div>
+            </div>
 
-            <Box>
+            <Box className="mb-4">
               <FormControl sx={{ width: "32.4rem" }} className="ms-3">
                 <InputLabel
                   id="demo-simple-select-label"
-                  sx={{ height: "2.5rem" }}
+                  sx={{
+                    height: "2.5rem",
+                    fontSize: "14px",
+                    bottom: "7px",
+                    top: "unset",
+                  }}
                 >
                   Select Country
                 </InputLabel>
                 <Select
-                  sx={{ height: "2.5rem" }}
+                  sx={{ height: "2.5rem", fontSize: "14px", color: "#9b9691" }}
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
-                  value={country}
-                  label="Select Country"
+                  value={values.country}
+                  name="country"
+                  label="Select country"
                   onChange={handleChange}
-                  defaultValue={10} // Set the default value to 10 (United States)
+                  defaultValue={"United States"} // Set the default value to 10 (United States)
                 >
-                  <MenuItem value={10}>United States</MenuItem>
-                  <MenuItem value={20}>Canada</MenuItem>
-                  <MenuItem value={30}>Mexico</MenuItem>
+                  <MenuItem value="United States">United States</MenuItem>
+                  <MenuItem value="Canada">Canada</MenuItem>
+                  <MenuItem value="Mexico">Mexico</MenuItem>
                 </Select>
               </FormControl>
             </Box>
+            <div className="errorcnt">
+              <div className="errortext">
+                {errors.country && touched.country && (
+                  <p className="form-error">{errors.country}</p>
+                )}
+              </div>
+            </div>
 
-            <p className="text-muted text-center my-3">
-              By creating an Account , you afree to{" "}
-              <a href="#">Poshmarks's Terms</a> and{" "}
-              <a href="#">Privacy Policy</a>
-            </p>
-
-            <div className="text-center">
-              <label htmlFor="remember-me">
-                <input
-                  id="remember-me"
-                  type="checkbox"
-                  checked={rememberMe}
-                  onChange={handleRememberMeChange}
-                />
-                <span
-                  className="ms-2"
-                  style={{
-                    fontWeight: "500",
-                    fontSize: "12px",
-                    color: "#333333",
-                  }}
-                >
-                  Stay Signed In
-                </span>
-              </label>
+            <div class="caption signup__footer__disclaimer">
+              <span>
+                By creating an account, you agree to{" "}
+                <a href="/terms" place="terms" className="td--ul tc--lg">
+                  Contractor Surplus Store
+                </a>{" "}
+                and{" "}
+                <a href="/privacy" place="privacy" className="td--ul tc--lg">
+                  Privacy Policy
+                </a>
+                .
+              </span>
+            </div>
+            <div className="flexprpty">
+              <FormControlLabel
+                control={<Checkbox defaultChecked />}
+                label="Stay Signed In"
+                size="small"
+                sx={{
+                  "& .MuiSvgIcon-root": { fontSize: 18 },
+                  fontSize: 10, // Decreased font size (adjust the value as needed)
+                }}
+              />
             </div>
             <DialogActions
               style={{ justifyContent: "flex-start" }}
@@ -524,9 +671,10 @@ const Navbar = () => {
                 Next
               </Button>
             </DialogActions>
-          </form>
+          </Form>
         </DialogContent>
       </Dialog>
+      <Navigation4 />
     </div>
   );
 };

@@ -134,6 +134,12 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.errorcnt {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .headerloginsignup :hover {
   cursor: pointer;
 }
@@ -182,4 +188,29 @@
 .css-h52lfd-MuiFormLabel-root-MuiInputLabel-root {
   line-height: 0.9em !important;
   height: 1.5rem !important;
+}
+
+.flexprpty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.css-ahj2mt-MuiTypography-root {
+  font-size: 0.825rem !important;
+}
+
+.signup__footer__disclaimer {
+  text-align: center;
+  color: #9b9691;
+  padding: 16px 48px 8px 48px;
+  border-top: 1px solid #d9d5d2;
+  font-size: 0.825rem !important;
+}
+
+.td--ul {
+  text-decoration: underline !important;
+}
+.tc--lg {
+  color: #9b9691 !important;
 }

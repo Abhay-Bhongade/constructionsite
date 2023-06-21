@@ -25,3 +25,9 @@ html {
 .fa-brands:hover {
   cursor: pointer;
 }
+
+.form-error {
+  color: #f98080;
+  font-size: 14px;
+  font-weight: 400;
+}
